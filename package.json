@@ -1,0 +1,36 @@
+{
+  "name": "feedbacker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "firebase": "^11.0.2",
+    "mongodb": "^6.12.0",
+    "next": "^15.0.3",
+    "path-to-regexp": "^8.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "semver": "^7.5.2",
+    "tar": "^7.4.0",
+    "undici": "^7.0.0-alpha.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.7",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.6.3",
+    "vercel": "^32.3.0"
+  }
+}

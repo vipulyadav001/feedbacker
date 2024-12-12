@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /private/
+Disallow: /settings/
+Disallow: /api/
+Disallow: /admin/
+Allow: /
+
+# Sitemap location
+Sitemap: https://feedbacker-evcfqrrp1-vipuls-projects-85bb93d3.vercel.app/sitemap.xml

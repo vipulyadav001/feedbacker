@@ -1,0 +1,115 @@
+:root {
+  --twitter-blue: #1da1f2;
+  --twitter-blue-dark: #1a8cd8;
+  --background-color: #ffffff;
+  --text-color: #0f1419;
+  --secondary-text: #536471;
+  --border-color: #eff3f4;
+  --hover-background: #f7f9f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.4;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+  resize: none;
+}
+
+.hover-effect:hover {
+  background-color: var(--hover-background);
+  transition: background-color 0.2s;
+}
+
+@media (max-width: 768px) {
+  body {
+    --content-width: 100%;
+  }
+  
+  div[style*="maxWidth: '600px'"] {
+    border: none !important;
+  }
+
+  div[style*="position: 'fixed'"][style*="left: '20px'"] {
+    display: none !important;
+  }
+
+  /* Mobile form adjustments */
+  div[style*="position: 'fixed'"][style*="bottom: 0"] {
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+    padding: 12px !important;
+  }
+
+  /* Mobile comment spacing */
+  div[style*="padding: '15px'"] {
+    padding: 12px !important;
+  }
+
+  /* Mobile text inputs */
+  textarea, input {
+    font-size: 16px !important; /* Prevents iOS zoom on focus */
+  }
+
+  /* Header adjustments */
+  header {
+    padding: 8px 12px !important;
+  }
+
+  /* Mobile comment spacing */
+  div[style*="padding: '15px'"] {
+    padding: 12px !important;
+  }
+
+  /* Mobile interaction buttons */
+  button[style*="borderRadius: '9999px'"] {
+    padding: 8px 12px !important;
+    min-height: 36px !important; /* Better touch target */
+  }
+
+  /* Reply section spacing */
+  div[style*="marginBottom: '20px'"] {
+    margin-bottom: 16px !important;
+    padding: 0 12px !important;
+  }
+}
+
+/* Touch-friendly hover states */
+@media (hover: hover) {
+  .hover-effect:hover {
+    background-color: var(--hover-background);
+  }
+}
+
+@media (hover: none) {
+  .hover-effect:active {
+    background-color: var(--hover-background);
+  }
+}
+
+/* Smooth transitions for interactive elements */
+button, a {
+  transition: opacity 0.2s, background-color 0.2s !important;
+}
+
+button:active {
+  opacity: 0.7;
+}
